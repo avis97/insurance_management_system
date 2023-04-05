@@ -6,7 +6,6 @@ import com.InsuranceSystem.InsuranceManagement.DTOs.ClaimRequestDtoForUpdate;
 import com.InsuranceSystem.InsuranceManagement.DTOs.ClaimResponseDto;
 import com.InsuranceSystem.InsuranceManagement.Exception.PoliciesNotFoundException;
 import com.InsuranceSystem.InsuranceManagement.service.ClaimService;
-import com.InsuranceSystem.InsuranceManagement.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
