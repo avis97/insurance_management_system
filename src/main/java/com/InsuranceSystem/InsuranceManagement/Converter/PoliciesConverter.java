@@ -1,7 +1,6 @@
 package com.InsuranceSystem.InsuranceManagement.Converter;
 
 import com.InsuranceSystem.InsuranceManagement.DTOs.PoliciesRequestDto;
-import com.InsuranceSystem.InsuranceManagement.DTOs.PoliciesRequestDtoForUpdate;
 import com.InsuranceSystem.InsuranceManagement.DTOs.PoliciesResponseDto;
 import com.InsuranceSystem.InsuranceManagement.DTOs.PoliciesResponseDtoForAllDetails;
 import com.InsuranceSystem.InsuranceManagement.Models.Policies;
@@ -17,6 +16,7 @@ public class PoliciesConverter{
                 .policiesType(policiesRequestDto.getPoliciesType())
                 .policiesAmount(policiesRequestDto.getAmount())
                 .policiesTiming(policiesRequestDto.getTiming())
+                .monthly_installment(policiesRequestDto.getMonthly_installment())
                 .endDate(policiesRequestDto.getEndDate())
                 .build();
     }
@@ -37,18 +37,8 @@ public class PoliciesConverter{
                 .policiesAmount(policies.getPoliciesAmount())
                 .clientId(policies.getClient().getClientId())
                 .policiesType(policies.getPoliciesType())
+                .monthly_installment(policies.getMonthly_installment())
                 .number(policies.getNumber())
                 .build();
     }
-
-//    public static Policies PoliciesRequestDtoForUpdateToPolicies(PoliciesRequestDtoForUpdate update)
-//    {
-//        return Policies.builder()
-//                //.number(update.getNumber())
-//                .policiesType(update.getPoliciesType())
-//                .policiesTiming(update.getPoliciesTiming())
-//                .endDate(update.getEndDate())
-//                .policiesAmount(update.getPoliciesAmount())
-//                .build();
-//    }
 }

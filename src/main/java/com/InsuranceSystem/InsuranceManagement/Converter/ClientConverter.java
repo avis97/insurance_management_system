@@ -13,6 +13,7 @@ public class ClientConverter{
                 .clientName(clientDto.getName())
                 .clientEmail(clientDto.getEmail())
                 .clientDob(clientDto.getDate_Of_birth())
+                .phoneNumber(clientDto.getPhoneNumber())
                 .build();
     }
     public static ClientResponseDto clientToclientResponseDto(Client client)
@@ -21,6 +22,7 @@ public class ClientConverter{
                 .ClientEmail(client.getClientEmail())
                 .ClientName(client.getClientName())
                 .ClientId(client.getClientId())
+                .PhoneNumber(client.getPhoneNumber())
                 .build();
     }
 }

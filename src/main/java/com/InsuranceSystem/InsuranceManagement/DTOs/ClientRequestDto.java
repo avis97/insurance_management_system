@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 public class ClientRequestDto{
     private String name;
     private String email;
+    private String phoneNumber;
     private String date_Of_birth;
 
 }

@@ -23,6 +23,7 @@ public class Client{
     private int clientId;
     @NotNull
     private String clientName;
+    private String phoneNumber;
     @Column(unique = true)
     @NotNull
     private String clientEmail;

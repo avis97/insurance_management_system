@@ -11,5 +11,6 @@ import lombok.NoArgsConstructor;
 public class ClientResponseDto{
     private String ClientName;
     private int ClientId;
+    private String PhoneNumber;
     private String ClientEmail;
 }

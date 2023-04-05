@@ -15,6 +15,7 @@ public class PoliciesResponseDtoForAllDetails{
     private String number;
     private PoliciesType policiesType;
     private int policiesAmount;
+    private int monthly_installment;
     private Date startDate;
     private String endDate;
     private int policiesTiming;

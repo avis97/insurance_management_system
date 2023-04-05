@@ -26,6 +26,7 @@ public class Policies{
     @Enumerated(EnumType.STRING)
     private PoliciesType policiesType;
     private int policiesAmount;
+    private int monthly_installment;
     @CreationTimestamp
     private Date startDate;
     private String endDate;

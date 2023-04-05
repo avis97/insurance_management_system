@@ -12,6 +12,7 @@ public class PoliciesRequestDto{
     private String number;
     private PoliciesType policiesType;
     private int amount;
+    private int monthly_installment;
     private String endDate;
     private int timing;
     private int clientId;
